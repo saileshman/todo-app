@@ -1,8 +1,8 @@
 const router = require("express").Router();
 const subRouter = require("../Modules/subtasks/subtask.api");
-const todoRouter = require("../Modules/todod/todo.api");
+const todoRouter = require("../Modules/todos/todo.api");
 
-router.use("/subta", subRouter);
-router.use("/todo", todoRouter);
+router.use("/subtasks", subRouter);
+router.use("/todos", todoRouter);
 
-modules.exports = router;
+module.exports = router;
